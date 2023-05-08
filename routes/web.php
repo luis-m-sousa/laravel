@@ -13,9 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $nome = "luis";
-    return view('home', ["nome" => $nome]);
+Route::get('/', () {
+    return view('home');
 });
 
 Route::get('/sobre', function () {
@@ -38,3 +37,7 @@ Route::get('/resumo', function () {
     return view('resume');
 });
 
+Route::get('/teste', function(){
+    return view('index');
+}
+);
