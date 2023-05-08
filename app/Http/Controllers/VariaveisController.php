@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class variaveis extends Controller
+class VariaveisController extends Controller
 {
 
     private $nome = 'Luis';

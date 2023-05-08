@@ -13,31 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', () {
-    return view('home');
-});
+Route::get('/', [VariaveisController::class, 'index'] );
 
-Route::get('/sobre', function () {
-    return view('about');
-});
+Route::get('/sobre', [VariavelController::class, 'about'] );
 
-Route::get('/portfolio', function () {
-    return view('portfolio');
-});
+Route::get('/portfolio', [VariavelController::class, 'portfolio'] );
 
-Route::get('/contato', function () {
-    return view('contact');
-});
+Route::get('/contato', [VariavelController::class, 'contact'] );
 
-Route::get('/detalhes-portfolio', function () {
-    return view('portfolio-detais');
-});
 
-Route::get('/resumo', function () {
-    return view('resume');
-});
-
-Route::get('/teste', function(){
-    return view('index');
-}
-);
+Route::get('/resumo', [VariavelController::class, 'resume'] );
