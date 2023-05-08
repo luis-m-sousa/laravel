@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Currículo - Luis Sousa</title>
+  <title>Currículo - {{$nome}}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -35,7 +35,7 @@
   <header id="header" class="fixed-top">
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Luis</a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="/">{{$nome}}</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -74,21 +74,21 @@
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Estudante do IFMG</h3>
+            <h3>{{$sobre}}</h3>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-rounded-right"></i> <strong>Nascimento:</strong> 27 de Julho de 2004</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Nascimento:</strong> {{$nasc}}</li>
                   <li><i class="bi bi-rounded-right"></i> <strong>Website:</strong> </li>
-                  <li><i class="bi bi-rounded-right"></i> <strong>Celular:</strong> +55 (37) 9 9812-4223</li>
-                  <li><i class="bi bi-rounded-right"></i> <strong>Cidade:</strong> Arcos, Minas Gerais, Brasil</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Celular:</strong> {{$telefone}}</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Cidade:</strong> {{$cidade}}</li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-rounded-right"></i> <strong>Idade:</strong> 18</li>
-                  <li><i class="bi bi-rounded-right"></i> <strong>Grau de Ensino:</strong> Cursando médio</li>
-                  <li><i class="bi bi-rounded-right"></i> <strong>Email:</strong> luismigueldesousa2707@gmail.com</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Idade:</strong> {{$idade}}</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Grau de Ensino:</strong> {{$nivel}}</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Email:</strong> {{$email}}</li>
                   <li><i class="bi bi-rounded-right"></i> <strong>Emprego:</strong> Estou precisando</li>
                 </ul>
               </div>

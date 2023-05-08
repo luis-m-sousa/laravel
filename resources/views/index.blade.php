@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Currículo - {{$nome}}</title>
+  <title>Currículo - {{$nome}} </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -37,7 +37,7 @@
   <header id="header" class="fixed-top">
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Luis</a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="/">{{$nome}}</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -65,7 +65,7 @@
   <section id="hero" class="d-flex align-items-center">
     <div class="container d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
       <h1 style="color: white">{{$nome}}</h1>
-      <h2>Sou um estudante do IF aspirante a programador.</h2>
+      <h2>{{$profissao}}</h2>
       <a href="/sobre" class="btn-about">Sobre mim</a>
     </div>
   </section><!-- End Hero -->

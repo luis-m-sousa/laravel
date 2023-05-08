@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Currículo - Luis Sousa</title>
+  <title>Currículo - {{$nome}}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -35,7 +35,7 @@
   <header id="header" class="fixed-top">
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Luis</a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="/">{{$nome}}</a></h1>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -76,13 +76,13 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>luismigueldesousa2707@gmail.com</p>
+                <p>{{$email}}</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Celular:</h4>
-                <p>+55 (37) 99812-4223</p>
+                <p>{{$telefone}}</p>
               </div>
 
         </div>

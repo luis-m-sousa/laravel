@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Currículo - Luis Sousa</title>
+  <title>Currículo - {{$nome}}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -42,7 +42,7 @@
   <header id="header" class="fixed-top">
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Luis</a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="/">{{$nome}}</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -52,7 +52,7 @@
           <li><a href="/sobre">Sobre</a></li>
           <li><a class="active" href="/resume">Resumo</a></li>
           <li><a href="/portfolio">Portfolio</a></li>
-          <li><a href="/contact">Contato</a></li>
+          <li><a href="/contato">Contato</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -81,20 +81,20 @@
           <div class="col-lg-6">
             <h3 class="resume-title">Educação</h3>
             <div class="resume-item">
-              <h4>Técnico integrado em informática (em curso)</h4>
-              <h5>2021 - 2023</h5>
-              <p><em>IFMG - Campus Formiga</em></p>
+              <h4>{{$curso1}}</h4>
+              <h5>{{$periodo1}}</h5>
+              <p><em>{{$local1}}</em></p>
             </div>
             <div class="resume-item">
-              <h4>Técnico em auxiliar administrativo (concluído)</h4>
-              <h5>2019 - 2019</h5>
-              <p><em>SENAI - Arcos</em></p>
+              <h4>{{$curso2}}</h4>
+              <h5>{{$periodo2}}</h5>
+              <p><em>{{$local2}}</em></p>
             </div>
           </div>
           <div class="col-lg-6">
             <h3 class="resume-title">Experiência Profissional</h3>
             <div class="resume-item">
-              <h4>Nenhuma até o momento</h4>
+              <h4>{{$experiencia}}</h4>
             </div>
           </div>
         </div>
