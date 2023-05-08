@@ -15,11 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [VariaveisController::class, 'index'] );
 
-Route::get('/sobre', [VariavelController::class, 'about'] );
+Route::get('/sobre', [VariaveisController::class, 'about'] );
 
-Route::get('/portfolio', [VariavelController::class, 'portfolio'] );
+Route::get('/portfolio', [VariaveisController::class, 'portfolio'] );
 
-Route::get('/contato', [VariavelController::class, 'contact'] );
+Route::get('/contato', [VariaveisController::class, 'contact'] );
 
-
-Route::get('/resumo', [VariavelController::class, 'resume'] );
+Route::get('/resumo', [VariaveisController::class, 'resume'] );
